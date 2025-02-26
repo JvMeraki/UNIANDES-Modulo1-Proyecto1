@@ -1,0 +1,12 @@
+digraph "classes_MiProyecto4" {
+rankdir=BT
+charset="utf-8"
+"Proyecto.base.Base" [color="black", fontcolor="black", label=<{Base|sabor<br ALIGN="LEFT"/>|abastecer()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"Proyecto.complemento.Complemento" [color="black", fontcolor="black", label=<{Complemento|<br ALIGN="LEFT"/>|abastecer()<br ALIGN="LEFT"/>renovar_inventario()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"Proyecto.copa.Copa" [color="black", fontcolor="black", label=<{Copa|ingredientes<br ALIGN="LEFT"/>nombre<br ALIGN="LEFT"/>precio_publico<br ALIGN="LEFT"/>tipo_vaso<br ALIGN="LEFT"/>|calcular_calorias()<br ALIGN="LEFT"/>calcular_costo()<br ALIGN="LEFT"/>calcular_rentabilidad()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"Proyecto.heladeria.Heladeria" [color="black", fontcolor="black", label=<{Heladeria|productos : dict<br ALIGN="LEFT"/>ventas : int<br ALIGN="LEFT"/>|añadir_producto(producto)<br ALIGN="LEFT"/>producto_mas_rentable()<br ALIGN="LEFT"/>vender(nombre_producto)<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"Proyecto.iproducto.IProducto" [color="black", fontcolor="black", label=<{IProducto|<br ALIGN="LEFT"/>|<I>calcular_calorias</I>()<br ALIGN="LEFT"/><I>calcular_costo</I>()<br ALIGN="LEFT"/><I>calcular_rentabilidad</I>()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"Proyecto.ingrediente.Ingrediente" [color="black", fontcolor="black", label=<{Ingrediente|calorias<br ALIGN="LEFT"/>es_vegetariano<br ALIGN="LEFT"/>inventario<br ALIGN="LEFT"/>nombre<br ALIGN="LEFT"/>precio<br ALIGN="LEFT"/>|<I>abastecer</I>(cantidad)<br ALIGN="LEFT"/>es_sano()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"Proyecto.malteada.Malteada" [color="black", fontcolor="black", label=<{Malteada|ingredientes<br ALIGN="LEFT"/>nombre<br ALIGN="LEFT"/>precio_publico<br ALIGN="LEFT"/>volumen<br ALIGN="LEFT"/>|calcular_calorias()<br ALIGN="LEFT"/>calcular_costo()<br ALIGN="LEFT"/>calcular_rentabilidad()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"Proyecto.producto.Producto" [color="black", fontcolor="black", label=<{Producto|ingredientes<br ALIGN="LEFT"/>nombre<br ALIGN="LEFT"/>precio_publico<br ALIGN="LEFT"/>|calcular_calorias()<br ALIGN="LEFT"/>calcular_costo()<br ALIGN="LEFT"/>calcular_rentabilidad()<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+}

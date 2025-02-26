@@ -1,0 +1,35 @@
+digraph "packages_MiProyecto4" {
+rankdir=BT
+charset="utf-8"
+"Proyecto" [color="black", label=<Proyecto>, shape="box", style="solid"];
+"Proyecto.base" [color="black", label=<Proyecto.base>, shape="box", style="solid"];
+"Proyecto.calculadora" [color="black", label=<Proyecto.calculadora>, shape="box", style="solid"];
+"Proyecto.complemento" [color="black", label=<Proyecto.complemento>, shape="box", style="solid"];
+"Proyecto.copa" [color="black", label=<Proyecto.copa>, shape="box", style="solid"];
+"Proyecto.funciones" [color="black", label=<Proyecto.funciones>, shape="box", style="solid"];
+"Proyecto.heladeria" [color="black", label=<Proyecto.heladeria>, shape="box", style="solid"];
+"Proyecto.ingrediente" [color="black", label=<Proyecto.ingrediente>, shape="box", style="solid"];
+"Proyecto.iproducto" [color="black", label=<Proyecto.iproducto>, shape="box", style="solid"];
+"Proyecto.main" [color="black", label=<Proyecto.main>, shape="box", style="solid"];
+"Proyecto.malteada" [color="black", label=<Proyecto.malteada>, shape="box", style="solid"];
+"Proyecto.producto" [color="black", label=<Proyecto.producto>, shape="box", style="solid"];
+"Proyecto.base" -> "Proyecto.ingrediente" [arrowhead="open", arrowtail="none"];
+"Proyecto.complemento" -> "Proyecto.ingrediente" [arrowhead="open", arrowtail="none"];
+"Proyecto.copa" -> "Proyecto.calculadora" [arrowhead="open", arrowtail="none"];
+"Proyecto.copa" -> "Proyecto.iproducto" [arrowhead="open", arrowtail="none"];
+"Proyecto.funciones" -> "Proyecto.calculadora" [arrowhead="open", arrowtail="none"];
+"Proyecto.funciones" -> "Proyecto.malteada" [arrowhead="open", arrowtail="none"];
+"Proyecto.heladeria" -> "Proyecto.base" [arrowhead="open", arrowtail="none"];
+"Proyecto.heladeria" -> "Proyecto.complemento" [arrowhead="open", arrowtail="none"];
+"Proyecto.heladeria" -> "Proyecto.copa" [arrowhead="open", arrowtail="none"];
+"Proyecto.heladeria" -> "Proyecto.funciones" [arrowhead="open", arrowtail="none"];
+"Proyecto.heladeria" -> "Proyecto.malteada" [arrowhead="open", arrowtail="none"];
+"Proyecto.main" -> "Proyecto.base" [arrowhead="open", arrowtail="none"];
+"Proyecto.main" -> "Proyecto.complemento" [arrowhead="open", arrowtail="none"];
+"Proyecto.main" -> "Proyecto.copa" [arrowhead="open", arrowtail="none"];
+"Proyecto.main" -> "Proyecto.funciones" [arrowhead="open", arrowtail="none"];
+"Proyecto.main" -> "Proyecto.heladeria" [arrowhead="open", arrowtail="none"];
+"Proyecto.main" -> "Proyecto.malteada" [arrowhead="open", arrowtail="none"];
+"Proyecto.malteada" -> "Proyecto.calculadora" [arrowhead="open", arrowtail="none"];
+"Proyecto.malteada" -> "Proyecto.iproducto" [arrowhead="open", arrowtail="none"];
+}
